@@ -1,6 +1,6 @@
 # name: discourse-starwars
-# about: Display Star Wars locales from User's selected locations.
-# version: 2.0
+# about: Display Star Wars locales from User's selected locations. (Forked from Ebsy/discourse-nationalflags)
+# version: 1.0
 # authors: David Forbush
 # url: https://github.com/hifihedgehog/discourse-starwars
 
