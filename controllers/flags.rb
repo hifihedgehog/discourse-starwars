@@ -1,13 +1,13 @@
-class ::DiscourseNationalFlags::FlagsController < ::ApplicationController
+class ::DiscourseStarWars::LocalesController < ::ApplicationController
     def flags
-        raw_flags = YAML.safe_load(File.read(File.join(Rails.root, 'plugins', 'discourse-nationalflags', 'config', 'flags.yml')))
+        raw_locales = YAML.safe_load(File.read(File.join(Rails.root, 'plugins', 'discourse-starwars', 'config', 'locales.yml')))
 
-        flagscollection = []
+        localescollection = []
 
-        raw_flags.map do |code, pic| 
-            flagscollection << DiscourseNationalFlags::Flag.new(code, pic)
+        raw_locales.map do |code, pic| 
+            localescollection << DiscourseStarWars::Locale.new(code, pic)
         end
 
-        render json: flagscollection
+        render json: localescollection
     end
 end
