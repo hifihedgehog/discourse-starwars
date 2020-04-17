@@ -1,7 +1,7 @@
 plugins:
-  nationalflag_enabled:
+  starwars_enabled:
     default: true
     client: true
-  nationalflag_iso:
+  starwars_iso:
     default: "none"
     client: true
